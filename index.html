@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity Spa</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body Styling */
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Header Styling */
+        .header {
+            position: relative;
+            text-align: center;
+            padding: 100px 20px;
+            background-image: url('attractive-african-woman-enjoying-face-massage-spa-salon_176420-13955.avif');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            margin-bottom: 20px;
+            width: 100%;
+            min-height: 400px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Dark overlay on the header image */
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: 1;
+        }
+
+        .header h1, .header p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #f0f0f0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Navigation Menu */
+        .navbar {
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 15px 0;
+        }
+
+        .navbar ul li {
+            margin: 0 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .navbar ul li a:hover {
+            color: #00796b;
+        }
+
+        /* Section Styling */
+        section {
+            width: 90%;
+            max-width: 1200px;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #00796b;
+        }
+
+        p {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        /* Image Gallery */
+        .gallery {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery img, .gallery video {
+            width: 300px; /* Ensure both images and videos have the same width */
+            height: 300px; /* Set a fixed height for both */
+            object-fit: cover; /* Ensure images and video fill the container without distortion */
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+        }
+
+        .contact .social-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 10px;
+            position: relative;
+        }
+
+        .contact .social-buttons button {
+            background-color: #00796b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.2em;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .contact .social-buttons button:hover {
+            background-color: #004d40;
+        }
+
+        .contact .social-buttons button i {
+            font-size: 1.5em;
+        }
+
+        /* Mouse Hover Effect for Buttons */
+        .contact .social-buttons button:hover {
+            transform: scale(1.1); /* Scale up slightly */
+        }
+
+        .contact .social-buttons button:active {
+            transform: scale(0.98); /* Scale down when clicked */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+            }
+
+            .gallery {
+                flex-direction: column;
+            }
+        }
+        .foot{
+            align-items: center;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            padding-right: 20px;
+            border-radius: 20px;
+           
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>ATA ELEGANCE SPA</h1>
+        <p>Your escape to relaxation and rejuvenation</p>
+    </header>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>Indulge in a variety of treatments designed to relax, rejuvenate, and renew your mind and body.</p>
+        <p>Our offerings include massages, facials, body scrubs, and more, using premium products for your wellness.</p>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Serenity Spa, we believe in providing a peaceful oasis where you can unwind and recharge. Our team of professionals is committed to delivering exceptional service in a calming environment.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="depositphotos_70822719-stock-photo-asian-woman-in-the-spa.jpg" alt="Spa Image 1">
+            <img src="enjoy_spa_01.webp" alt="Spa Image 2">
+            <img src="female-full-body-laser-hair-removal.jpg" alt="Spa Image 3">
+            <img src="blackskin-beauty-woman-healthy-happy-600nw-1932957851.webp" alt="Spa Image 4">
+            <video autoplay muted loop>
+                <source src="stock-footage-vertical-video-beauty-woman-face-isolated-on-light-background-skin-care-beautiful-female-model.webm" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="social-buttons">
+            <button onclick="window.location.href='https://instagram.com'">
+                <i class="fab fa-instagram"></i> Instagram
+            </button>
+            <button onclick="window.location.href='https://facebook.com'">
+                <i class="fab fa-facebook"></i> Facebook
+            </button>
+            <button onclick="window.location.href='tel:+1234567890'">
+                <i class="fas fa-phone-alt"></i> Call Us
+            </button>
+        </div>
+    </section>
+    <div class="foot"><P>this web page is made by ashur saad for more information <a href="#"> click here</a></P></div>
+
+</body>
+</html>
+
